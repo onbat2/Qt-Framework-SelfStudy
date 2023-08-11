@@ -1,2 +1,2 @@
 # Qt-Framework-SelfStudy
-My Study ọn Qt-Framework
+My Study on Qt-Framework
