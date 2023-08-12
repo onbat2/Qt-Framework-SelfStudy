@@ -25,6 +25,17 @@ public:
 
 private:
     void initUI();
+    void createAction();
+    void showImage(QString);
+    void setupShortcuts();
+
+private slots:
+    void openImage();
+    void zoomIn();
+    void zoomOut();
+    void prevImage();
+    void nextImage();
+    void saveAs();
 
 private:
 //    Ui::MainWindow *ui;
@@ -42,5 +53,14 @@ private:
     QLabel *mainStatusLabel;
 
     QAction *openAction;
+    QAction *saveAsAction;
+    QAction *exitAction;
+    QAction *zoomInAction;
+    QAction *zoomOutAction;
+    QAction *prevAction;
+    QAction *nextAction;
+
+    QString currentImagePath;
+    QGraphicsPixmapItem *currentImage;
 };
 #endif // MAINWINDOW_H
